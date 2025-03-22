@@ -1,0 +1,3 @@
+@function public_url($url) {
+	@return url(get_public_init() + $url);
+}

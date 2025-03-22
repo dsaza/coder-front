@@ -1,0 +1,11 @@
+{% macro card() %}
+<div class="Card">
+	<div class="Card-wrapper">
+		<div class="Card-content">
+			<h1>codermk</h1>
+			{{ caller() }}
+			{% include "../partials/link-docs.twig" %}
+		</div>
+	</div>
+</div>
+{% endmacro %}
