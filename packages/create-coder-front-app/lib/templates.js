@@ -8,8 +8,6 @@ const { copySync } = fse
 export function templateCopyists({ type, path: _path, name}) {
 	const dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
-	console.log(type)
-
 	try {
 		copySync(path.join(dirname, `../templates/${type}`), _path)
 
@@ -19,7 +17,6 @@ export function templateCopyists({ type, path: _path, name}) {
 		
 		return true
 	} catch (error) {
-		console.error(error)
 		return false
 	}
 }

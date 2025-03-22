@@ -1,13 +1,14 @@
 {
-	"name": "@coder-front/create-app",
-	"version": "0.0.1",
+	"name": "create-coder-front-app",
+	"version": "0.0.3",
+	"description": "Create a new coder-front app",
 	"type": "module",
 	"bin": {
 		"create-coder-front-app": "./bin/create-coder-front-app.js"
 	},
-	"engines": {
-		"node": ">=18.20.7"
-	},
+	"publishConfig": {
+    "access": "public"
+  },
 	"dependencies": {
 		"@clack/prompts": "0.10.0",
 		"fs-extra": "11.3.0",
