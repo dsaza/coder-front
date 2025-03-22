@@ -1,8 +1,8 @@
 import path from 'node:path'
-import { printHeader, printError, printSuccess, printCommands } from './lib/log.js'
-import { removeTemplateIfExist, templateCopyists } from './lib/templates.js'
-import { promptNameProject, promptTypeProject } from './lib/prompts.js'
-import { existFolderProject } from './lib/validators.js'
+import { printHeader, printError, printSuccess, printCommands } from './src/log.js'
+import { removeTemplateIfExist, templateCopyists } from './src/templates.js'
+import { promptNameProject, promptTypeProject } from './src/prompts.js'
+import { existFolderProject } from './src/validators.js'
 
 printHeader()
 
